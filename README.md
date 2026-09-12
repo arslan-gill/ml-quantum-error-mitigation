@@ -6,7 +6,7 @@ models: an invented uniform depolarizing model, and a real per-qubit noise
 model built from a frozen calibration snapshot of IBM's 27-qubit
 `ibmq_mumbai` device.
 
-📄 **[Full write-up (PDF)](results/QEM_ML_Report.md)** — methodology, all figures, and references.
+📄 **[Full write-up](results/QEM_ML_Report.md)** — methodology, all figures, and references.
 
 ## Headline result
 
