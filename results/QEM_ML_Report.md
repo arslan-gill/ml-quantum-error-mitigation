@@ -79,21 +79,21 @@ On the random split, the ML model reduces MSE by **77.4%** relative to raw noisy
 
 ### 3.2 Visual comparison
 
-![Figure 1. MSE against the ideal expectation value, for raw noisy output, ZNE, and the ML-corrected estimate, in both evaluation regimes.](figures/figure1_mse_comparison.png)
+![Figure 1. MSE against the ideal expectation value, for raw noisy output, ZNE, and the ML-corrected estimate, in both evaluation regimes.](figures/fig2_mse_comparison.png)
 
 *Figure 1. MSE against the ideal expectation value, for raw noisy output, ZNE, and the ML-corrected estimate, in both evaluation regimes. Lower is better.*
 
-![Figure 2. Predicted/measured expectation value vs. the true ideal value for all three methods, random-split test set.](figures/figure2_predicted_vs_ideal.png)
+![Figure 2. Predicted/measured expectation value vs. the true ideal value for all three methods, random-split test set.](figures/fig5_invented_vs_real_mse.png)
 
 *Figure 2. Predicted/measured expectation value vs. the true ideal value (statevector ground truth) for all three methods, random-split test set. Points on the dashed diagonal are exact; the ML panel visibly tightens around the diagonal relative to raw noisy and ZNE.*
 
 ### 3.3 What is the model actually using?
 
-![Figure 3. Distribution of residuals (estimate minus ideal) for all three methods.](figures/figure3_residual_distribution.png)
+![Figure 3. Distribution of residuals (estimate minus ideal) for all three methods.](figures/fig4_residual_distribution.png)
 
 *Figure 3. Distribution of residuals (estimate minus ideal) for all three methods. The ML-corrected distribution is both narrower and more sharply centered on zero.*
 
-![Figure 4. Gradient Boosting feature importances.](figures/figure4_feature_importance.png)
+![Figure 4. Gradient Boosting feature importances.](figures/fig3_feature_importance.png)
 
 *Figure 4. Gradient Boosting feature importances. The model relies almost entirely on the noisy measurement and the folded (noise-scaled) measurements, not on circuit-structure features (qubit count, depth, gate counts) directly.*
 
@@ -105,7 +105,7 @@ The results above use an invented, spatially-uniform noise model: a single depol
 
 A linear chain of 6 physically-adjacent qubits (physical indices 13-12-10-7-4-1) was identified in the device's real coupling map via a longest-simple-path search, so that the hardware-efficient-ansatz circuits' linear CX-ladder structure maps onto real, connected hardware qubits with zero swap-routing overhead. Real per-qubit readout error alone varies by nearly 3x across the six qubits used (1.5% to 4.4%), which a uniform noise model cannot represent at all.
 
-![Figure 5. Real per-qubit calibration data (readout error, T1) from the frozen ibmq_mumbai snapshot.](figures/figure5_real_calibration_data.png)
+![Figure 5. Real per-qubit calibration data (readout error, T1) from the frozen ibmq_mumbai snapshot.](figures/fig6_real_calibration_data.png)
 
 *Figure 5. Real per-qubit calibration data (readout error, T1) from the frozen ibmq_mumbai snapshot used to build the noise model, for the 6 physical qubits used in this experiment.*
 
@@ -116,7 +116,7 @@ A linear chain of 6 physically-adjacent qubits (physical indices 13-12-10-7-4-1)
 | MSE (OOD split, 6-qubit) | 0.00171 | 0.00075 | 0.00043 |
 | MAE (OOD split, 6-qubit) | 0.0347 | 0.0228 | 0.0166 |
 
-![Figure 6. MSE comparison side-by-side under the invented uniform-noise model and the real ibmq_mumbai-calibrated noise model.](figures/figure6_invented_vs_real_comparison.png)
+![Figure 6. MSE comparison side-by-side under the invented uniform-noise model and the real ibmq_mumbai-calibrated noise model.](figures/fig5_invented_vs_real_mse.png)
 
 *Figure 6. MSE comparison side-by-side under the invented uniform-noise model (left, Section 3.1) and the real ibmq_mumbai-calibrated noise model (right). The ML-vs-ZNE-vs-raw ordering is unchanged; absolute error levels differ because the real device's specific error rates differ from the invented constants.*
 
