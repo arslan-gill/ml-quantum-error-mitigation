@@ -102,4 +102,4 @@ node src/make_report.js
 - No direct comparison to Clifford Data Regression (CDR/vnCDR) or
   Probabilistic Error Cancellation.
 
-See the [full report](results/QEM_ML_Report.pdf), Section 6, for the full discussion.
+See the [full report](results/QEM_ML_Report.md), Section 6, for the full discussion.
