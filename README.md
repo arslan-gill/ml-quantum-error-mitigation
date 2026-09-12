@@ -6,8 +6,7 @@ models: an invented uniform depolarizing model, and a real per-qubit noise
 model built from a frozen calibration snapshot of IBM's 27-qubit
 `ibmq_mumbai` device.
 
-Full write-up with methodology, figures, and references:
-`results/QEM_ML_Report.pdf` (or `.docx`).
+📄 **[Full write-up (PDF)](results/QEM_ML_Report.pdf)** — methodology, all figures, and references.
 
 ## Headline result
 
@@ -103,4 +102,4 @@ node src/make_report.js
 - No direct comparison to Clifford Data Regression (CDR/vnCDR) or
   Probabilistic Error Cancellation.
 
-See `results/QEM_ML_Report.pdf` Section 6 for the full discussion.
+See the [full report](results/QEM_ML_Report.pdf), Section 6, for the full discussion.
