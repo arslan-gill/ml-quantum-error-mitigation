@@ -1,0 +1,26 @@
+{
+  "random_split": {
+    "n_train": 360,
+    "n_test": 120,
+    "mse_raw_noisy": 0.00248467754389572,
+    "mse_zne": 0.0011024775991188424,
+    "mse_ml": 0.0005625357061768831,
+    "mae_raw_noisy": 0.04117729153138795,
+    "mae_zne": 0.027660897892936777,
+    "mae_ml": 0.017373263962956752,
+    "improvement_over_raw_pct": 77.35981042856432,
+    "improvement_over_zne_pct": 48.97531644847106
+  },
+  "ood_split": {
+    "n_train": 384,
+    "n_test": 96,
+    "mse_raw_noisy": 0.0019247823090655484,
+    "mse_zne": 0.0010349988056967592,
+    "mse_ml": 0.000622253839288652,
+    "mae_raw_noisy": 0.03599621804012928,
+    "mae_zne": 0.0265120770680506,
+    "mae_ml": 0.01967459929111469,
+    "improvement_over_raw_pct": 67.67146932108147,
+    "improvement_over_zne_pct": 39.87878673253618
+  }
+}

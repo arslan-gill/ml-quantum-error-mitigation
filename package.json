@@ -1,0 +1,9 @@
+{
+  "name": "qem-ml-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Word report generator for the ML-for-quantum-error-mitigation project",
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
